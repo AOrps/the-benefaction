@@ -14,4 +14,5 @@ for (( i=0; i<${#text}; i++ )); do
   fi
 done
 
-echo "$regex"
+# Compress to string to regex string
+echo "$regex" | sed -E 's/( )+/\\s+/g'
