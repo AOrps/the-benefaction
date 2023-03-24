@@ -1,4 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+function usage {
+    cat <<EOF
+$0 hello
+EOF
+}
+
+#usage && exit 0
 
 text="$1"
 regex=""
